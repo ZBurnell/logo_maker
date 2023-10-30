@@ -1,0 +1,26 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Object-oriented Programming: SVG Logo Maker",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZBurnell/logo_maker.git"
+  },
+  "author": "ZBurnell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZBurnell/logo_maker/issues"
+  },
+  "homepage": "https://github.com/ZBurnell/logo_maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^24.9.0"
+  }
+}
