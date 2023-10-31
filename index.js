@@ -4,9 +4,10 @@ const fs = require('fs')
 const { Triangle, Square, Circle } = require("./lib/shapes");
 
 
-function promptUser() {
-  inquirer
-    .prompt([
+// function to prompt a user for imput on a new logo
+   inquirer
+    .prompt
+  ([
       {
         type: "input",
         message: "Please enter 3 Characters to start your new logo",
@@ -30,25 +31,19 @@ function promptUser() {
       },
     ])
     .then((answers) => {
-      if (answers.text.length > 3) {
-        console.log("Must enter a value of no more than 3 characters");
-        promptUser();
-      } else {
-        writeToFile("logo.svg", answers);
-      }
+        writeFile("logo.svg", answers);
     });
-}
-promptUser();
 
-// Function to write SVG file using user answers
-function writeToFile(fileName, answers) {
+
+// Function to write SVG file using user input from prompts
+function writeFile(fileName, answers) {
     let svgString = "";
     svgString = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
     svgString += "<g>";
     svgString += `${answers.shape}`;
   
     let shapeChoice;
-    if (answers.shape === "circle") {
+    if (answers.shape === "Circle") {
       shapeChoice = new Circle();
       svgString += `<circle cx="150" cy="115" r="80" fill="${answers.Background}"/>`;
     } else if (answers.shape === "Square") {
