@@ -7,15 +7,17 @@ This project was started as a way for a user to generate a simple logo or monogr
 # Table of Content
 
 1. [Description](#description)
-2. [Installation](#installation)
+2. [Demonstration](#demonstration)
 3. [Examples](#examples)
 4. [Usage](#usage)
 5. [Credits](#credits)
 6. [License](#license)
 7. [Features](#features)
 
-# Installation
-Link to video can be found here -> [Google Drive link for screen recording]()
+# Demonstration
+Link to google drive video submission can be found here -> [video submission](https://drive.google.com/file/d/18nfSES8Q6jEGCvyCccNTlnzDlxkeu6fc/view)
+
+![SVG created during Video](./logo.svg)
 
 # Examples
 ![Circle](Examples/logo.circle.svg)
